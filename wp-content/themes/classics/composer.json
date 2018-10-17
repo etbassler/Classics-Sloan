@@ -1,0 +1,7 @@
+{
+  "name": "cuberis-base",
+  "description": "Official WordPress starter theme of Cuberis.",
+  "require": {
+    "php": ">=7"
+  }
+}

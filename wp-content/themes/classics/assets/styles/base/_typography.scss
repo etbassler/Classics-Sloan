@@ -1,0 +1,84 @@
+// Loaded Web Fonts
+.wf-active {
+  body,
+  .sans-serif {
+    font-family: "Open Sans", $sans-serif;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  .serif {
+    font-family: "Cardo", $serif;
+  }
+}
+
+// Generates single-purpose utility classes.
+$font-sizes: (
+  root-xs: $size-root-xs,
+  root: $size-root,
+  root-2x: $size-root * 2,
+  h4: $size-h4,
+  h3: $size-h3,
+  h2: $size-h2,
+  h1: $size-h1,
+  h1-plus: $size-h1-plus,
+  yuge: $size-yuge
+);
+
+$font-styles: (
+  normal: normal,
+  italic: italic
+);
+
+@each $key, $val in $font-styles {
+  .text-#{$key} {
+    font-style: $val;
+  }
+}
+
+@each $key, $val in $font-sizes {
+  .size-#{$key} {
+    font-size: $val;
+  }
+}
+
+.main {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    @include antialiased;
+    margin-bottom: 1.5rem;
+  }
+  h1 {
+    font-size: $size-h1;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-size: $size-h2;
+  }
+  h3 {
+    font-size: $size-h3;
+  }
+  h4 {
+    font-size: $size-h4;
+    text-transform: uppercase;
+  }
+  p {
+    @include antialiased;
+  }
+  a:not(.btn) {
+    color: theme-color("text-alt");
+    font-style: italic;
+  }
+  ul {
+    @include antialiased;
+    padding-left: 1.1rem;
+    font-weight: bold;
+    li {
+      color: theme-color("navy");
+    }
+  }
+}

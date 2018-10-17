@@ -1,0 +1,38 @@
+{
+  "name": "cuberis-base",
+  "version": "8.6.1",
+  "description": "Official WordPress starter theme of Cuberis.",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cuberis/cuberis-base.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cuberis/cuberis-base/issues"
+  },
+  "license": "MIT",
+  "scripts": {
+    "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "browser-sync-webpack-plugin": "^2.0.1",
+    "copy-webpack-plugin": "^4.3.1",
+    "imagemin-mozjpeg": "^7.0.0",
+    "imagemin-webpack-plugin": "^1.6.1",
+    "laravel-mix": "^2.1.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.0",
+    "jquery": "2.2.4",
+    "lazysizes": "^4.0.2",
+    "picturefill": "^3.0.2",
+    "popper.js": "^1.14.0"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  }
+}

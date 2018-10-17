@@ -1,0 +1,26 @@
+// Grid settings
+$main-sm-columns: 12;
+$sidebar-sm-columns: 4;
+
+// Colors
+$theme-colors: (
+  primary: #186e00,
+  secondary: #6369d1,
+  tertiary: #5bba6f,
+  quaternary: #5c6784
+);
+
+// Fonts
+$serif: "Georgia", serif;
+$sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+  "Helvetica Neue", Arial, sans-serif;
+
+// Sizes
+$size-root-xs: 14px;
+$size-root: 16px;
+$size-yuge: 4rem; // 64px
+$size-h1-plus: 3.5rem; // 56px
+$size-h1: 2.75rem; // 44px
+$size-h2: 2.25rem; // 36px
+$size-h3: 1.75rem; // 28px
+$size-h4: 1.25rem; // 20px

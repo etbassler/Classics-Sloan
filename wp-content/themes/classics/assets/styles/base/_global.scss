@@ -1,0 +1,40 @@
+// [a11y] suppress visible focus indication on the skip-to-content link target
+// http://getbootstrap.com/getting-started/#skip-navigation
+#main:focus {
+  outline: none;
+}
+
+header {
+  .navbar-brand {
+    max-width: 300px;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+#content {
+  background: transparent
+    url("/wp-content/themes/classics/dist/images/background.png") center center
+    repeat;
+}
+
+#primary-menu {
+  .menu-item {
+    a {
+      transition: all 0.2s ease-in;
+      margin-bottom: -1px;
+
+      &:hover {
+        color: theme-color("primary");
+        text-decoration: none;
+        border-bottom: 3px solid theme-color("primary");
+      }
+    }
+    &.current-menu-item {
+      color: initial;
+      border-bottom: 3px solid theme-color("secondary");
+    }
+  }
+}

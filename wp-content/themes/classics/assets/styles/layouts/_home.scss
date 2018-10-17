@@ -1,0 +1,38 @@
+.home-top {
+  background: transparent
+    url("/wp-content/themes/classics/dist/images/coliseum.jpg") center center
+    no-repeat;
+  background-size: cover;
+  color: white;
+}
+.home-middle {
+  padding: 6rem 0;
+}
+.home-bottom {
+  background: transparent
+    url("/wp-content/themes/classics/dist/images/home-bg.jpg") center -30px no-repeat;
+  background-size: cover;
+  padding: 6rem 0;
+}
+
+.home {
+  #content {
+    background: white;
+    .ast-container {
+      padding: 0;
+    }
+  }
+  #primary {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .background-gradient {
+    padding: 6rem 0;
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8) 50%,
+      rgba(0, 0, 0, 0.2) 75%
+    );
+  }
+}
