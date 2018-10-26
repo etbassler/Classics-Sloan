@@ -32,6 +32,8 @@ $includes = [
   'lib/assets.php',         // Scripts and stylesheets
   'lib/extras.php',         // Custom functions
   'lib/setup.php',          // Theme setup
+  'lib/tracking.php',       // Analytics Tracking
+
 ];
 
 foreach ($includes as $file) {
