@@ -1,122 +1,30 @@
-#content {
-  .home-top {
-    background: transparent
-      url("/wp-content/themes/classics/dist/images/coliseum.jpg") center center
-      no-repeat;
-    background-size: cover;
-    color: white;
-    min-height: calc(100vh - 83px);
-    h2 {
-      font-size: 3rem;
-    }
-    p,
-    ul {
-      font-size: 1.5rem;
-      strong {
-        font-style: italic;
-        text-transform: uppercase;
-        font-family: "Cardo";
-      }
-    }
-    ul {
-      list-style: none;
-      li {
-        margin-bottom: 20px;
-        &:after {
-          left: -35px;
-          top: 8px;
-          height: 20px;
-          width: 20px;
-        }
-      }
-    }
-    .scroll-down {
-      position: absolute;
-      animation: bounce 2s ease infinite;
-      left: calc(50% - 15px);
-      bottom: 6rem;
-      polygon {
-        fill: white;
-      }
-    }
-
-    @keyframes bounce {
-      25% {
-        transform: translateY(-50%);
-      }
-      50% {
-        transform: translateY(0);
-      }
-    }
-  }
-  .home-middle {
-    padding: 3rem 0;
-    #carouselQuotes {
-      width: 100%;
-      margin: 6rem 0 0 0;
-      padding: 3rem 0;
-    }
-    .quote-background {
-      position: absolute;
-      left: 10%;
-      top: 0px;
-      svg {
-        fill: theme-color("secondary");
-        opacity: 0.2;
-      }
-    }
-
-    .carousel-inner {
-      min-height: 150px;
-      .quote--content {
-        font-size: 2rem;
-      }
-      .quote--attribution {
-        font-size: 1.2rem;
-        font-family: "Cardo";
-        .quote--affiliation {
-          font-size: 0.7rem;
-          font-weight: bold;
-          text-transform: uppercase;
-        }
-      }
-    }
-    .carousel-indicators li {
-      background-color: theme-color("primary");
-      opacity: 0.2;
-    }
-    .carousel-indicators .active {
-      opacity: 1;
-    }
-  }
-  .home-bottom {
-    background: transparent
-      url("/wp-content/themes/classics/dist/images/home-bg.jpg") center -30px no-repeat;
-    background-size: cover;
-    padding: 6rem 0;
-  }
-}
 .home {
   #content {
     background: white;
     .ast-container {
       padding: 0;
     }
+    ul {
+      list-style: none;
+      li {
+        position: relative;
+        &:after {
+          left: -35px;
+          top: 8px;
+          height: 20px;
+          width: 20px;
+          content: " ";
+          position: absolute;
+          background: transparent
+            url("/wp-content/themes/classics/dist/images/mark.png") center
+            center no-repeat;
+          background-size: cover;
+        }
+      }
+    }
   }
   #primary {
     margin-top: 0px;
     margin-bottom: 0px;
-  }
-  .background-gradient {
-    position: relative;
-    width: 100%;
-    padding: 6rem 0 12rem 0;
-    background: linear-gradient(
-        to bottom,
-        rgba(255, 255, 255, 0) 75%,
-        rgba(255, 255, 255, 0.5) 85%,
-        rgba(255, 255, 255, 1) 95%
-      ),
-      rgba(0, 0, 0, 0.7);
   }
 }
